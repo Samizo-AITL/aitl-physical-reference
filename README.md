@@ -164,7 +164,31 @@ but will preserve minimalism.
 
 ---
 
-## License
+## 👤 Author
 
-This project is released under an **open hardware–friendly license**.  
-See the LICENSE file for details.
+| 📌 Item | Details |
+|--------|---------|
+| **Name** | Shinichi Samizo |
+| **Expertise** | Semiconductor devices (logic, memory, high-voltage mixed-signal)<br>Thin-film piezo actuators for inkjet systems<br>Printhead productization, BOM management, ISO training |
+| **GitHub** | [![GitHub](https://img.shields.io/badge/GitHub-Samizo--AITL-black?logo=github)](https://github.com/Samizo-AITL) |
+
+---
+
+## 📄 License
+
+[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](https://samizo-aitl.github.io/aitl-physical-reference/#---license)
+
+| 📌 Item | License | Description |
+|--------|---------|-------------|
+| **Source Code** | [**MIT License**](https://opensource.org/licenses/MIT) | Free to use, modify, and redistribute |
+| **Text Materials** | [**CC BY 4.0**](https://creativecommons.org/licenses/by/4.0/) or [**CC BY-SA 4.0**](https://creativecommons.org/licenses/by-sa/4.0/) | Attribution required; share-alike applies for BY-SA |
+| **Figures & Diagrams** | [**CC BY-NC 4.0**](https://creativecommons.org/licenses/by-nc/4.0/) | Non-commercial use only |
+| **External References** | Follow the original license | Cite the original source properly |
+
+---
+
+## 💬 Feedback
+
+> Suggestions, improvements, and discussions are welcome via GitHub Discussions.
+
+[![💬 GitHub Discussions](https://img.shields.io/badge/💬%20GitHub-Discussions-brightgreen?logo=github)](https://github.com/Samizo-AITL/aitl-physical-reference/discussions)
