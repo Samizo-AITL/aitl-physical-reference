@@ -1,0 +1,5 @@
+Ref,Value,Package,Quantity,Description,Notes
+D1,LED Green,0603,1,Indicator LED,任意色可
+R1,1kΩ,0603,1,Current limit resistor,5V想定
+TP1,TestPoint,1.0mm Pad,1,Voltage observation point,Single pad
+J1,PinHeader,1x02 2.54mm,1,Power input (+5V/GND),Optional
