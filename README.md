@@ -1,8 +1,3 @@
----
-title: "aitl-physical-reference"
-description: "A minimal physical reference PCB that grounds abstract control logic into real voltage, current, and copper."
----
-
 # aitl-physical-reference
 
 This repository provides a **minimal physical reference PCB**  
