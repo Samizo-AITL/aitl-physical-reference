@@ -1,3 +1,8 @@
+---
+title: "aitl-physical-reference"
+description: ""
+---
+
 # aitl-physical-reference
 
 This repository provides a **physical reference PCB**
@@ -6,6 +11,16 @@ into **real voltage, current, and copper**.
 
 It is intentionally minimal and generic, focusing on
 **observability, physical constraints, and manufacturability**.
+
+[![Back to Portal (EN)](https://img.shields.io/badge/Back%20to%20Portal-0B5FFF?style=for-the-badge&logo=homeassistant&logoColor=white)](https://samizo-aitl.github.io/portal/en/)
+
+---
+
+## 🔗 Links
+
+| Language | GitHub Pages 🌐 | GitHub 💻 |
+|----------|----------------|-----------|
+| 🇺🇸 English | [![GitHub Pages EN](https://img.shields.io/badge/GitHub%20Pages-English-brightgreen?logo=github)](https://samizo-aitl.github.io/aitl-physical-reference/) | [![GitHub Repo EN](https://img.shields.io/badge/GitHub-English-blue?logo=github)](https://github.com/Samizo-AITL/aitl-physical-reference/tree/main) |
 
 ---
 
