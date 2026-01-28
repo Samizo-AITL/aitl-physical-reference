@@ -1,14 +1,38 @@
-# Design Intent
+# 🧠 Design Intent
 
-This board provides a minimal physical reference that converts
-abstract control logic into observable voltage and current behavior.
+This board provides a **minimal physical reference** that converts  
+**abstract control logic** into **observable voltage and current behavior**.
 
-## Purpose
-- Anchor logical "ON/OFF" into real current flow
-- Provide a physical probe point for control systems
-- Serve as the lowest-level reference in AITL architecture
+It exists to define the **first physical boundary**  
+where logic becomes electricity.
 
-## Relation to AITL
-- Logical decision → voltage application
-- Control abstraction → copper behavior
-- Simulation → measurable physics
+---
+
+## 🎯 Purpose
+
+- 🔌 Anchor logical **ON / OFF** decisions into **real current flow**
+- 📍 Provide a **probe-able physical observation point** for control systems
+- 🧱 Serve as the **lowest-level physical reference** within the **AITL architecture**
+
+This board intentionally avoids functionality  
+and focuses on **grounding**.
+
+---
+
+## 🔗 Relation to AITL
+
+Within **AITL (Architecture for Integrated Technology Logic)**,  
+this board represents the **Physical Truth Layer**.
+
+- 🧠 **Logical decision** → 🔌 **Voltage application**
+- 🎛 **Control abstraction** → 🟠 **Copper behavior**
+- 🧪 **Simulation** → 📏 **Measurable physics**
+
+No firmware.  
+No interpretation.  
+Only what can be **powered, probed, and measured**.
+
+---
+
+Design intent is preserved by **what is omitted**  
+as much as by what is included.
