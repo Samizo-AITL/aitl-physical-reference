@@ -131,6 +131,34 @@ aitl-physical-reference/
 
 ---
 
+---
+
+## 📂 Key Artifacts (Reference Entry Points)
+
+### 📄 Documentation
+- **Design Intent**  
+  [GitHub Page](https://samizo-aitl.github.io/aitl-physical-reference/docs/DesignIntent.html)  
+  [Repository](https://github.com/Samizo-AITL/aitl-physical-reference/tree/main/docs/DesignIntent.md)
+
+- **Assembly Instructions**  
+  [GitHub Page](https://samizo-aitl.github.io/aitl-physical-reference/docs/Assembly.html)  
+  [Repository](https://github.com/Samizo-AITL/aitl-physical-reference/tree/main/docs/Assembly.md)
+
+- **Test & Measurement Procedure**  
+  [GitHub Page](https://samizo-aitl.github.io/aitl-physical-reference/docs/TestProcedure.html)  
+  [Repository](https://github.com/Samizo-AITL/aitl-physical-reference/tree/main/docs/TestProcedure.md)
+
+### 🧾 Bill of Materials
+- **BOM (CSV)**  
+  [GitHub Page](https://samizo-aitl.github.io/aitl-physical-reference/bom/bom.csv)  
+  [Repository](https://github.com/Samizo-AITL/aitl-physical-reference/blob/main/bom/bom.csv)
+
+### 🧩 Hardware Source (Physical Truth)
+- **KiCad Project (Schematic / PCB)**  
+  [Repository](https://github.com/Samizo-AITL/aitl-physical-reference/tree/main/hardware/kicad)
+
+---
+
 ## 🔧 Build & Assembly Flow
 
 To physically build and use this reference board:
