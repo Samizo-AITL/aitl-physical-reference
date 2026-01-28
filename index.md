@@ -3,7 +3,7 @@ title: "aitl-physical-reference"
 description: "A minimal physical reference PCB that grounds abstract control logic into real voltage, current, and copper."
 ---
 
-# aitl-physical-reference
+# 🧩 aitl-physical-reference
 
 This repository provides a **minimal physical reference PCB**  
 that anchors abstract control and logic concepts into **real voltage, current, and copper**.
@@ -23,13 +23,13 @@ focusing on **observability, physical constraints, and manufacturability** rathe
 
 ---
 
-## Purpose
+## 🎯 Purpose
 
 The purpose of this board is **not control**, but **grounding**.
 
-- Fix abstract logic into **measurable V–I behavior**
-- Provide a **visible and probe-able physical endpoint**
-- Act as a **lowest-level physical reference**, reusable across systems
+- 🔌 Fix abstract logic into **measurable V–I behavior**
+- 👁 Provide a **visible and probe-able physical endpoint**
+- 🧱 Act as a **lowest-level physical reference**, reusable across systems
 
 This board can be *used by* higher-level architectures  
 (control logic, supervisory layers, AI reasoning),  
@@ -37,18 +37,18 @@ but it **does not depend on them**.
 
 ---
 
-## What This Is
+## 🧩 What This Is
 
 This repository contains a **reference PCB**, not a product.
 
-The board includes only elements required to expose
+The board includes only elements required to expose  
 the relationship between logic and physics:
 
-- **LED** — observable output state  
-- **Resistor** — physical constraint (current limitation)  
-- **Switch** — discrete physical event input  
-- **Test Point** — voltage / current measurement access  
-- **Board outline (Edge.Cuts)** — explicit physical boundary  
+- 💡 **LED** — observable output state  
+- 🧮 **Resistor** — physical constraint (current limitation)  
+- 🔘 **Switch** — discrete physical event input  
+- 📍 **Test Point** — voltage / current measurement access  
+- 📐 **Board outline (Edge.Cuts)** — explicit physical boundary  
 
 Nothing more.
 
@@ -56,38 +56,39 @@ Nothing more.
 
 ## 🖼 Physical Reference Overview
 
-### 1. Schematic (Logical → Physical Mapping)
+### 1️⃣ Schematic (Logical → Physical Mapping)
 
 ![Schematic](https://samizo-aitl.github.io/aitl-physical-reference/docs/img/01_apr_sch_v0.png)
 
-This schematic shows the **minimal logic-to-physics mapping**:
+This schematic shows the **minimal logic-to-physics mapping**:  
 LED, resistor, switch, and test point only — nothing abstracted away.
 
 ---
 
-### 2. PCB Layout (Physical Constraints)
+### 2️⃣ PCB Layout (Physical Constraints)
 
 ![PCB Layout](https://samizo-aitl.github.io/aitl-physical-reference/docs/img/02_apr_pcb_v0.png)
 
 The PCB layout explicitly exposes:
-- copper routing  
-- component placement  
-- board boundary (Edge.Cuts)  
+
+- 🟠 Copper routing  
+- 📦 Component placement  
+- ⛓ Board boundary (Edge.Cuts)  
 
 This is the **physical truth layer**.
 
 ---
 
-### 3. 3D View (Embodied Reality)
+### 3️⃣ 3D View (Embodied Reality)
 
 ![3D View](https://samizo-aitl.github.io/aitl-physical-reference/docs/img/03_apr_3d_v0.png)
 
-The 3D view represents the **embodiment** of logic:
+The 3D view represents the **embodiment** of logic:  
 real height, real connectors, real probe access.
 
 ---
 
-## What This Is NOT
+## 🚫 What This Is NOT
 
 - ❌ Not a full controller  
 - ❌ Not MCU-centric  
@@ -99,109 +100,108 @@ This repository intentionally avoids *solutions* and focuses on *reference*.
 
 ---
 
-## Architecture Mapping (Conceptual → Physical)
+## 🧠 Architecture Mapping (Conceptual → Physical)
 
 | Conceptual Role | Physical Element |
 |-----------------|------------------|
-| Output state    | LED              |
-| Constraint      | Resistor         |
-| Event input     | Switch           |
-| Observation     | Test point       |
-| Boundary        | PCB outline      |
+| Output state    | 💡 LED           |
+| Constraint      | 🧮 Resistor      |
+| Event input     | 🔘 Switch        |
+| Observation     | 📍 Test point    |
+| Boundary        | 📐 PCB outline   |
 
 This mapping is the **core value** of the project.
 
 ---
 
-## Repository Structure
+## 🗂 Repository Structure
 
 ```
 aitl-physical-reference/
 ├─ hardware/
-│  └─ kicad/            # KiCad project (schematic / PCB)
+│ └─ kicad/ # KiCad project (schematic / PCB)
 ├─ bom/
-│  └─ bom.csv           # Component list (non-CAD)
+│ └─ bom.csv # Component list (non-CAD)
 ├─ docs/
-│  ├─ Assembly.md       # Assembly instructions
-│  ├─ TestProcedure.md  # Measurement & verification
-│  └─ DesignIntent.md   # Physical design intent
+│ ├─ Assembly.md # Assembly instructions
+│ ├─ TestProcedure.md # Measurement & verification
+│ └─ DesignIntent.md # Physical design intent
 └─ README.md
 ```
 
-👉 **KiCad以外の「進むための材料」はすべてここに置く前提**
-
 ---
 
-## Build & Assembly Flow
+## 🔧 Build & Assembly Flow
 
 To physically build and use this reference board:
 
-1. Review **`bom/bom.csv`** and prepare components  
-2. Manufacture PCB using KiCad data in `hardware/kicad/`  
-3. Assemble components following **`docs/Assembly.md`**  
-4. Apply +5V power and observe LED behavior  
-5. Verify voltage/current using **`docs/TestProcedure.md`**
+1. 📄 Review **`bom/bom.csv`** and prepare components  
+2. 🏭 Manufacture PCB using KiCad data in `hardware/kicad/`  
+3. 🛠 Assemble components following **`docs/Assembly.md`**  
+4. ⚡ Apply +5V power and observe LED behavior  
+5. 📊 Verify voltage/current using **`docs/TestProcedure.md`**
 
 This flow is intentionally simple and repeatable.
 
 ---
 
-## Verification & Measurement
+## 📏 Verification & Measurement
 
 This board is designed to be **measured**, not just powered.
 
 Typical checks:
-- LED ON/OFF state
-- Forward voltage at test point
-- Current limited by resistor
-- Boundary defined by board outline
+
+- 💡 LED ON/OFF state  
+- 📍 Forward voltage at test point  
+- 🧮 Current limited by resistor  
+- 📐 Boundary defined by board outline  
 
 These checks validate the **logic → physics transition**.
 
 ---
 
-## Toolchain
+## 🧰 Toolchain
 
-- **CAD**: KiCad  
-- **Design style**: Minimal, readable, single-layer preferred  
-- **Outputs**: Standard manufacturable Gerber data  
+- 🧩 **CAD**: KiCad  
+- 🎨 **Design style**: Minimal, readable, single-layer preferred  
+- 📤 **Outputs**: Standard manufacturable Gerber data  
 
 The design favors **clarity over density**.
 
 ---
 
-## Usage Context
+## 🌍 Usage Context
 
 This physical reference can be used in:
 
-- Control systems
-- Supervisory logic
-- Educational hardware
-- Logic-to-physical architecture studies
-- AITL-based discussions and validation
+- 🎛 Control systems  
+- 🧠 Supervisory logic  
+- 🎓 Educational hardware  
+- 🔁 Logic-to-physical architecture studies  
+- 🤖 AITL-based discussions and validation  
 
 It acts as a **ground truth layer**, not a controller.
 
 ---
 
-## Status
+## 📌 Status
 
 - **v0** — Minimal physical reference  
-  - LED  
-  - Resistor  
-  - Switch  
-  - Test point  
+  - 💡 LED  
+  - 🧮 Resistor  
+  - 🔘 Switch  
+  - 📍 Test point  
 
-Future revisions may extend observability,
+Future revisions may extend observability,  
 but will preserve minimalism.
 
 ---
 
-## Roadmap
+## 🗺 Roadmap
 
-- v0: Passive physical reference (LED / R / SW / TP)
-- v1: MCU boundary reference (GPIO ↔ Physical)
-- v2: Control-capable reference (PID / FSM execution)
+- 🟢 v0: Passive physical reference (LED / R / SW / TP)
+- 🔵 v1: MCU boundary reference (GPIO ↔ Physical)
+- 🟣 v2: Control-capable reference (PID / FSM execution)
 
 ---
 
@@ -233,4 +233,3 @@ but will preserve minimalism.
 > Suggestions, improvements, and discussions are welcome via GitHub Discussions.
 
 [![💬 GitHub Discussions](https://img.shields.io/badge/💬%20GitHub-Discussions-brightgreen?logo=github)](https://github.com/Samizo-AITL/aitl-physical-reference/discussions)
-
