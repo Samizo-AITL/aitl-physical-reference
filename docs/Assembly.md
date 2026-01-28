@@ -1,3 +1,8 @@
+---
+title: "aitl-physical-reference"
+description: "A minimal physical reference PCB that grounds abstract control logic into real voltage, current, and copper."
+---
+
 # 🛠 Assembly Guide
 
 This guide describes the **minimal and observable assembly process**  
