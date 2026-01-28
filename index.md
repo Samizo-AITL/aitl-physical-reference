@@ -131,8 +131,6 @@ aitl-physical-reference/
 
 ---
 
----
-
 ## 📂 Key Artifacts (Reference Entry Points)
 
 ### 📄 Documentation
