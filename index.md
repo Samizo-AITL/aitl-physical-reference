@@ -54,6 +54,39 @@ Nothing more.
 
 ---
 
+## 🖼 Physical Reference Overview
+
+### 1. Schematic (Logical → Physical Mapping)
+
+![Schematic](https://samizo-aitl.github.io/aitl-physical-reference/img/01_apr_sch_v0.png)
+
+This schematic shows the **minimal logic-to-physics mapping**:
+LED, resistor, switch, and test point only — nothing abstracted away.
+
+---
+
+### 2. PCB Layout (Physical Constraints)
+
+![PCB Layout](https://samizo-aitl.github.io/aitl-physical-reference/img/02_apr_pcb_v0.png)
+
+The PCB layout explicitly exposes:
+- copper routing  
+- component placement  
+- board boundary (Edge.Cuts)  
+
+This is the **physical truth layer**.
+
+---
+
+### 3. 3D View (Embodied Reality)
+
+![3D View](https://samizo-aitl.github.io/aitl-physical-reference/img/03_apr_3d_v0.png)
+
+The 3D view represents the **embodiment** of logic:
+real height, real connectors, real probe access.
+
+---
+
 ## What This Is NOT
 
 - ❌ Not a full controller  
