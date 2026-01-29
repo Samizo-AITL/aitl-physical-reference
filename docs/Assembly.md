@@ -65,3 +65,79 @@ before power is applied.
 
 Assembly is intentionally simple.  
 If something feels “too clever,” it is probably unnecessary.
+
+---
+
+## 🟦 v1 Assembly Intent — Boundary Preservation
+
+Assembly in **v1** must preserve the board’s role as a  
+**logical–physical boundary reference**.
+
+The goal is **not correctness of function**,  
+but **clarity of physical meaning**.
+
+---
+
+### 🔌 Boundary Awareness During Assembly
+
+When assembling v1, keep the following intent in mind:
+
+- Components do **not** implement logic  
+- They only **expose physical consequences** of logic
+- Orientation, placement, and solder quality affect **measurement truth**
+
+This board must remain **boringly obvious**.
+
+---
+
+### 📛 Boundary Signal Consideration
+
+If a boundary pin or pad labeled `LOGIC_OUT` is present:
+
+- Treat it as a **pure voltage injection point**
+- Do not add pull-ups, filters, or protection circuits
+- Do not reinterpret it as a “control signal”
+
+`LOGIC_OUT` exists only to answer:
+
+> *What voltage and current appear in copper  
+> when logic asserts a state?*
+
+---
+
+### 🚫 What NOT to Add (v1 Rule)
+
+During assembly, **do not**:
+
+- ❌ Add wires, bodges, or jumpers  
+- ❌ Change resistor value “to make it brighter”  
+- ❌ Stack components or piggyback parts  
+- ❌ Optimize for visibility or aesthetics  
+
+Any such change breaks **reference equivalence**.
+
+---
+
+### 🔒 Assembly Stability Rule
+
+Once assembled as v1:
+
+- The physical meaning of each part **must not change**
+- Rework is allowed **only to restore original intent**
+- Any enhancement belongs to **v2 or another board**
+
+Assembly errors are corrected.  
+Design intent is not negotiated.
+
+---
+
+### 🧠 AITL Alignment
+
+Within AITL, assembly corresponds to:
+
+- 🧠 Logic: already decided elsewhere  
+- 🛠 Assembly: fixes meaning into matter  
+- 📏 Measurement: confirms existence  
+
+Assembly is where **abstraction becomes irreversible**.
+
