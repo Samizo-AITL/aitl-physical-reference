@@ -315,6 +315,47 @@ Any extension must:
 
 ---
 
+## 🔖 GPIO Naming Rule (v1)
+
+GPIO names in **v1** are **semantic and directional**.  
+They describe **what crosses the boundary**, not how it is implemented.
+
+### 📛 Naming Format
+
+```
+<ROLE>_<DIRECTION>
+```
+
+- **ROLE**: logical meaning at the boundary  
+- **DIRECTION**: signal direction *from logic perspective*
+
+### 📌 Standard Roles
+
+| Name | Meaning |
+|-----|--------|
+| `LOGIC_OUT` | Logic asserts a physical state |
+| `LOGIC_IN` | Logic observes a physical condition |
+| `PWR_IN` | External power reference |
+| `GND` | Electrical ground |
+
+### 🔄 Direction Definition
+
+- `_OUT` : logic → physical  
+- `_IN`  : physical → logic  
+
+> Example: `LOGIC_OUT` means  
+> “Logic drives voltage/current into the physical layer.”
+
+### 🚫 Prohibited in v1
+
+- ❌ MCU-specific names (`PA0`, `GPIO23`)
+- ❌ Functional assumptions (`LED_CTRL`, `PWM_OUT`)
+- ❌ Timing semantics (`CLK`, `SYNC`)
+
+v1 names must remain **architecture-agnostic and timeless**.
+
+---
+
 ## 👤 Author
 
 | 📌 Item | Details |
