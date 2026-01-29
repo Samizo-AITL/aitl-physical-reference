@@ -223,11 +223,100 @@ but will preserve minimalism.
 
 ---
 
-## 🗺 Roadmap
+## 🟦 v1 Definition — Physical ↔ Logical Boundary Reference
 
-- 🟢 v0: Passive physical reference (LED / R / SW / TP)
-- 🔵 v1: MCU boundary reference (GPIO ↔ Physical)
-- 🟣 v2: Control-capable reference (PID / FSM execution)
+**v1** extends *aitl-physical-reference* from a passive grounding board  
+into a **clearly defined physical–logical boundary reference**.
+
+This version does **not** aim to control, compute, or decide.  
+It exists solely to **define where logic ends and physics begins**.
+
+---
+
+### 🎯 Purpose of v1
+
+- 🔗 Define a **clear GPIO ↔ physical boundary**
+- 📏 Fix **measurable voltage–current expectations** at that boundary
+- 🧭 Provide a **stable reference point** for higher layers (FSM / PID / AI)
+
+v1 answers one question only:
+
+> *“When logic toggles a pin, what does that mean in copper, voltage, and current?”*
+
+---
+
+### 🔌 v1 Scope (Strict)
+
+v1 **adds a boundary**, not intelligence.
+
+**Included**
+- 📍 Explicit **logic-level input/output pins**
+- 💡 Physical load (LED + R) driven *through* that boundary
+- 📊 Documented **expected V–I ranges per node**
+- 🧪 Test points tied to logical meaning
+
+**Explicitly excluded**
+- ❌ No firmware logic
+- ❌ No control algorithm
+- ❌ No timing guarantees
+- ❌ No optimization
+
+---
+
+### 📐 Boundary Concept
+
+| Layer | Responsibility |
+|------|----------------|
+| Logical / MCU | State decision, timing, abstraction |
+| **v1 Boundary** | **Voltage level, current flow, observability** |
+| Physical | Light emission, heat, copper limits |
+
+v1 is the **line**, not the controller.
+
+---
+
+### 📊 Reference Measurement Table (Normative)
+
+| Node | Condition | Expected Voltage | Expected Current | Meaning |
+|-----|----------|-----------------|-----------------|--------|
+| LOGIC_OUT | High | 3.3–5.0 V | < 1 mA | Logic asserts state |
+| LED_NODE | ON | 1.8–2.2 V | 5–10 mA | Physical output active |
+| VCC | Nominal | 5.0 V ±5% | — | Power reference |
+
+This table is **normative** in v1.
+
+---
+
+### 🧠 Architectural Role
+
+v1 serves as:
+
+- 🔹 **FSM** — physical state confirmation point  
+- 🔹 **PID** — actuator-side reality reference  
+- 🔹 **LLM / AI** — grounding layer to prevent abstraction drift  
+
+Higher layers may change.  
+**v1 must not.**
+
+---
+
+### 🔒 Stability Rule
+
+Once released:
+
+> **v1 electrical meaning SHALL NOT change.**
+
+Any extension must:
+- become **v1.x** (documentation / measurement only), or
+- move to **v2** (control-capable reference)
+
+---
+
+### 🏷 Versioning Summary
+
+- 🟢 **v0** — Passive physical reference (LED / R / SW / TP)
+- 🔵 **v1** — Logical–physical boundary reference
+- 🟣 **v2** — Control-capable execution reference (FSM / PID)
 
 ---
 
