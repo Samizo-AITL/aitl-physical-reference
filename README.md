@@ -315,14 +315,6 @@ Any extension must:
 
 ---
 
-## 🗺 Roadmap
-
-- 🟢 v0: Passive physical reference (LED / R / SW / TP)
-- 🔵 v1: MCU boundary reference (GPIO ↔ Physical)
-- 🟣 v2: Control-capable reference (PID / FSM execution)
-
----
-
 ## 👤 Author
 
 | 📌 Item | Details |
