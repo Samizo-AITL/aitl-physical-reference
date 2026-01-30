@@ -1,12 +1,12 @@
 ---
 title: "aitl-physical-reference"
-description: "A minimal physical reference PCB that grounds abstract control logic into real voltage, current, and copper."
+description: "A minimal physical reference PCB that grounds abstract control logic into real voltage–current behavior and copper."
 ---
 
 # 🧠 Design Intent
 
-This board provides a **minimal physical reference** that converts  
-**abstract control logic** into **observable voltage and current behavior**.
+This board provides a **minimal physical reference** that anchors  
+**abstract control logic** into **observable voltage–current (V–I) behavior**.
 
 It exists to define the **first physical boundary**  
 where logic becomes electricity.
@@ -15,9 +15,9 @@ where logic becomes electricity.
 
 ## 🎯 Purpose
 
-- 🔌 Anchor logical **ON / OFF** decisions into **real current flow**
-- 📍 Provide a **probe-able physical observation point** for control systems
-- 🧱 Serve as the **lowest-level physical reference** within the **AITL architecture**
+- 🔌 Anchor logical **ON / OFF** decisions into **real current flow (V–I reality)**
+- 📍 Provide a **probe-able observation point** for validation and discussion
+- 🧱 Serve as the **lowest-level physical reference** within **AITL (Architecture for Integrated Technology Logic)**
 
 This board intentionally avoids functionality  
 and focuses on **grounding**.
@@ -27,30 +27,28 @@ and focuses on **grounding**.
 ## 🔗 Relation to AITL
 
 Within **AITL (Architecture for Integrated Technology Logic)**,  
-this board represents the **Physical Truth Layer**.
+this board represents the **Physical Truth Layer** — the place where:
 
-- 🧠 **Logical decision** → 🔌 **Voltage application**
-- 🎛 **Control abstraction** → 🟠 **Copper behavior**
-- 🧪 **Simulation** → 📏 **Measurable physics**
+- 🧠 **Logical decision** → 🔌 **Voltage assertion**
+- 🎛 **Control abstraction** → 🟠 **Copper current path**
+- 🧪 **Simulation** → 📏 **Measured V–I truth**
 
 No firmware.  
 No interpretation.  
 Only what can be **powered, probed, and measured**.
-
----
 
 Design intent is preserved by **what is omitted**  
 as much as by what is included.
 
 ---
 
-## 🟦 v1 Design Intent — Logical ↔ Physical Boundary
+## 🟦 v1 Design Intent — Logical ↔ Physical Boundary (Normative)
 
 **v1** formalizes this board as a  
-**logical–physical boundary reference**, not merely a powered artifact.
+**logical–physical boundary reference** — not merely a powered artifact.
 
 The intent of v1 is **not to add capability**,  
-but to **fix meaning at the boundary**.
+but to **fix meaning at the boundary** in a way that higher layers can rely on.
 
 ---
 
@@ -65,8 +63,8 @@ In v1, the board explicitly defines:
 A single signal — `LOGIC_OUT` — represents this boundary.
 
 > When `LOGIC_OUT` is asserted,  
-> the board does not decide *what to do* —  
-> it only reveals **what physically happens**.
+> the board does not decide *what to do*.  
+> It only reveals **what physically happens** in voltage–current (V–I) terms.
 
 ---
 
@@ -75,12 +73,12 @@ A single signal — `LOGIC_OUT` — represents this boundary.
 `LOGIC_OUT` is defined as:
 
 - A **logic-originated voltage assertion**
-- Free of timing, protocol, or semantic meaning
+- Free of timing, protocol, or functional semantics
 - Interpreted only through **measured V–I behavior**
 
 `LOGIC_OUT` is **not**:
 - a command  
-- a control signal  
+- a control algorithm  
 - a functional abstraction  
 
 It is a **boundary condition**.
@@ -91,23 +89,25 @@ It is a **boundary condition**.
 
 In v1, **measurement defines existence**.
 
-- Voltage confirms logical assertion
-- Current confirms physical constraint
-- Light confirms observable output
+- Voltage measurement confirms **logical assertion**
+- Current measurement confirms **physical constraint**
+- Light emission confirms **observable output state**
 
 Anything not measurable is **out of scope**.
 
 ---
 
-### 🔒 Stability Intent
+### 🔒 Stability Intent (Normative)
 
-Once released as v1:
+Once released as **v1**:
 
-- Electrical meaning of the boundary **shall not change**
+- Electrical meaning at the boundary **SHALL NOT change**
 - Interpretation belongs to higher layers (FSM / PID / AI)
-- This board remains **architecture-agnostic**
+- This board remains **architecture-agnostic and timeless**
 
-Any functional extension must move **outside** this reference.
+Any functional extension must move **outside** this reference:
+- documentation-only updates may be **v1.x**
+- functional changes must become **v2**
 
 ---
 
@@ -118,8 +118,7 @@ Within AITL, v1 corresponds to:
 | AITL Layer | Role |
 |-----------|------|
 | Logic | Decision & abstraction |
-| **Physical Reference (this board)** | **Boundary & grounding** |
+| **Physical Reference (this board)** | **Boundary & grounding (V–I truth)** |
 | Reality | Energy, matter, constraints |
 
-This separation is **intentional and permanent**.
-
+This separation is **intentional** and **permanent**.
