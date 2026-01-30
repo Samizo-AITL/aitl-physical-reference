@@ -53,33 +53,35 @@ Nothing more.
 
 ### 1️⃣ Schematic (Logical → Physical Mapping)
 
-![Schematic](https://samizo-aitl.github.io/aitl-physical-reference/docs/img/01_apr_sch_v0.png)
+![Schematic](https://samizo-aitl.github.io/aitl-physical-reference/docs/img/04_apn_sch_v1.png)
 
-This schematic shows the **minimal logic-to-physics mapping**:  
-LED, resistor, switch, and test point only — nothing abstracted away.
+This schematic defines the **normative logical–physical boundary**:  
+a logic-driven output constrained by real voltage and current,  
+with explicit measurement access points.
 
 ---
 
 ### 2️⃣ PCB Layout (Physical Constraints)
 
-![PCB Layout](https://samizo-aitl.github.io/aitl-physical-reference/docs/img/02_apr_pcb_v0.png)
+![PCB Layout](https://samizo-aitl.github.io/aitl-physical-reference/docs/img/05_apn_pcb_v1.png)
 
-The PCB layout explicitly exposes:
+The PCB layout exposes the **fixed physical constraints**:
 
-- 🟠 Copper routing  
-- 📦 Component placement  
-- ⛓ Board boundary (Edge.Cuts)  
+- 🟠 Copper routing and current paths  
+- 📦 Component placement tied to observability  
+- ⛓ Explicit board boundary (Edge.Cuts)  
 
-This is the **physical truth layer**.
+This layout is the **authoritative physical truth** for v1.
 
 ---
 
 ### 3️⃣ 3D View (Embodied Reality)
 
-![3D View](https://samizo-aitl.github.io/aitl-physical-reference/docs/img/03_apr_3d_v0.png)
+![3D View](https://samizo-aitl.github.io/aitl-physical-reference/docs/img/06_apn_3d_v1.png)
 
-The 3D view represents the **embodiment** of logic:  
-real height, real connectors, real probe access.
+The 3D view represents the **embodied boundary** between logic and physics:  
+real height, real clearances, and real probe access —  
+nothing abstracted, nothing implied.
 
 ---
 
