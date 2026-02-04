@@ -49,6 +49,19 @@ Nothing more.
 
 ---
 
+## 🖼 Figure Index (Canonical)
+
+All schematics, PCB layouts, and 3D views used in this project are
+**normatively indexed and embedded** on the following page:
+
+👉 **Image Index (v0–v2)**  
+[https://samizo-aitl.github.io/aitl-physical-reference/docs/img/](https://samizo-aitl.github.io/aitl-physical-reference/docs/img/)
+
+This page is the **single source of truth** for all figures referenced as
+*Fig.XX* throughout the documentation.
+
+---
+
 ## 🖼 Physical Reference Overview
 
 ### 1️⃣ Schematic (Logical → Physical Mapping)
