@@ -59,11 +59,11 @@ Nothing more.
 All schematics, PCB layouts, and 3D views used in this project are
 **normatively indexed and embedded** on the following page:
 
-👉 **Image Index (v0–v2)**  
+👉 **Image Index (v0–v3)**  
 [https://samizo-aitl.github.io/aitl-physical-reference/docs/img/](https://samizo-aitl.github.io/aitl-physical-reference/docs/img/)
 
-This page is the **single source of truth** for all figures referenced as
-*Fig.XX* throughout the documentation.
+> v3 figures are provided for *derived control reference boards*
+> and do not modify the normative v0–v2 physical reference.
 
 ---
 
