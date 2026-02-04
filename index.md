@@ -446,6 +446,25 @@ Any change must advance to **v3**.
 
 ---
 
+## 🔴 v3 — Derived Control Reference (External)
+
+**v3 is NOT part of the aitl-physical-reference core.**
+
+It is a *derived hardware reference* that **inserts minimal control**
+into the **frozen physical loop defined by v2**.
+
+- v0–v2: normative physical reference (this repository)
+- v3: downstream control experiment (separate hardware directory)
+
+The authoritative source for v3 is:
+
+👉 hardware/kicad/aitl-physical-control  
+👉 See **Fig.10–Fig.12** in the Image Index
+
+v0–v2 remain **unchanged and normative** regardless of v3 evolution.
+
+---
+
 ## 👤 Author
 
 | 📌 Item | Details |
