@@ -72,6 +72,28 @@ Executable physical loop represented as a real, buildable object.
 
 ---
 
+## 🔴 v3 — Minimal Physical Control Reference
+
+### Fig.10 — v3 Schematic (Physical Control Inserted)
+![Fig.10 v3 Schematic](https://samizo-aitl.github.io/aitl-physical-reference/docs/img/10_apc_sch_v3.png)
+
+Minimal continuous control element (potentiometer) inserted into the frozen physical loop,
+without altering loop topology.
+
+### Fig.11 — v3 PCB (DRC Clean)
+![Fig.11 v3 PCB](https://samizo-aitl.github.io/aitl-physical-reference/docs/img/11_apc_pcb_v3.png)
+
+Manufacturable PCB implementing a single closed V–I loop with explicit
++5V / GND observation points.
+
+### Fig.12 — v3 3D
+![Fig.12 v3 3D](https://samizo-aitl.github.io/aitl-physical-reference/docs/img/12_apc_3d_v3.png)
+
+Embodied physical control reference showing the controllable element
+as a real, buildable object.
+
+---
+
 ## 📌 Rules (Normative)
 
 - Figure numbering (**Fig.XX**) is **normative and stable**.
