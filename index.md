@@ -363,6 +363,76 @@ v1 names must remain **architecture-agnostic and timeless**.
 
 ---
 
+## 🟣 v2 Definition — Executable Physical Loop Reference
+
+**v2** realizes the v1 physical–logical boundary  
+as a **manufacturable, observable, and DRC-clean physical loop**.
+
+While v1 defines *what the boundary means*,  
+v2 defines *how that meaning exists in copper*.
+
+---
+
+### 🎯 Purpose of v2
+
+- 🧱 Fix the **entire V–I loop** as a physical fact
+- 👁 Preserve **observability at every critical node**
+- 🏭 Ensure **manufacturability (DRC clean, Edge.Cuts defined)**
+- 🚫 Still **no control logic, no firmware, no optimization**
+
+v2 answers one question only:
+
+> *“If we freeze the physical loop itself, what remains controllable?”*
+
+---
+
+### 🔌 v2 Scope (Strict)
+
+**Included**
+- 📐 Explicit **board outline (Edge.Cuts)**
+- 🔁 Single, closed **physical current loop**
+- 📍 Test points that do **not disturb** the loop
+- 🧮 Current-limiting elements as physical constraints
+
+**Explicitly excluded**
+- ❌ No MCU
+- ❌ No GPIO semantics
+- ❌ No feedback or timing logic
+- ❌ No intelligence
+
+---
+
+### 🧠 Architectural Role of v2
+
+| Layer | Role |
+|------|------|
+| v1 | Normative boundary definition |
+| **v2** | **Executable physical ground truth** |
+| v3+ | Control, supervision, adaptation |
+
+v2 is the **last layer before control begins**.
+
+---
+
+### 🔒 Stability Rule (v2)
+
+Once released:
+
+> **The physical loop topology and V–I meaning SHALL NOT change.**
+
+Any change must advance to **v3**.
+
+---
+
+### 🏷 Versioning Summary (Updated)
+
+- 🟢 **v0** — Passive physical reference
+- 🔵 **v1** — Physical ↔ Logical boundary definition
+- 🟣 **v2** — Executable physical loop reference (DRC clean)
+- 🔴 **v3** — Control insertion reference (FSM / PID)
+
+---
+
 ## 👤 Author
 
 | 📌 Item | Details |
